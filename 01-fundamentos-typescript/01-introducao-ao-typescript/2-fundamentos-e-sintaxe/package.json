@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "variaveis": "ts-node-dev src/variaveis-e-tipos.ts",
     "objeto": "ts-node-dev src/objetos-interfaces.ts",
-    "decisao": "ts-node-dev src/decisao-repeticao.ts"
+    "decisao": "ts-node-dev src/decisao-repeticao.ts", 
+    "arrays": "ts-node-dev src/arrays.ts"
   },
   "keywords": [],
   "author": "",
