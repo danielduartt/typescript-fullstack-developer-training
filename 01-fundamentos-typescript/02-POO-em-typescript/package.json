@@ -1,0 +1,17 @@
+{
+  "name": "02-poo-em-typescript",
+  "version": "1.0.0",
+  "description": "Este projeto apresenta os conceitos fundamentais de **POO (Programação Orientada a Objetos)** utilizando **TypeScript**, uma linguagem que adiciona tipagem estática ao JavaScript e facilita a organização e escalabilidade de aplicações.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "classes": "ts-node-dev src/classes-e-tipos.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
