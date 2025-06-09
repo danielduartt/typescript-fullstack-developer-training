@@ -1,4 +1,3 @@
-
 <h1 align="center">🧠 Formação TypeScript Full Stack - DIO</h1>
 
 <p align="center">
@@ -49,6 +48,30 @@ Este repositório contém todo o conteúdo e projetos práticos desenvolvidos du
 
 ---
 
+## 📥 Instalação Local do Neovim (opcional)
+
+Se desejar utilizar o Neovim localmente no projeto, sem instalar no sistema, siga os passos abaixo (válido apenas para **Linux x86_64**):
+
+```bash
+# Baixar a versão mais recente do Neovim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+
+# Extrair o arquivo
+tar -xzf nvim-linux64.tar.gz
+
+# Executar o Neovim diretamente
+./nvim-linux64/bin/nvim
+````
+
+> ⚠️ Esse binário **não deve ser comitado** no repositório. Adicione ao `.gitignore`:
+>
+> ```
+> nvim-linux64/
+> nvim-linux64.tar.gz
+> ```
+
+---
+
 ## 📂 Organização dos Diretórios
 
 ```
@@ -71,7 +94,7 @@ Todos os certificados podem ser acessados diretamente na plataforma DIO ao térm
 
 ## 📌 Autor
 
-Desenvolvido por [Daniel Duarte](https://github.com/danielduartt) 🚀  
+Desenvolvido por [Daniel Duarte](https://github.com/danielduartt) 🚀
 Formação disponível em [dio.me](https://www.dio.me)
 
 ---
@@ -86,31 +109,31 @@ This repository contains all the content and practical projects developed during
 
 ### 🧭 Module Structure
 
-| Module | Description | Activities |
-|--------|-------------|------------|
-| [`01-fundamentos-typescript`](./01-fundamentos-typescript) | TypeScript syntax, types, functions, and OOP | `5 activities` |
-| [`02-react-intro`](./02-react-intro) | React + TypeScript: components, props, and types | `5 activities` |
-| [`03-react-avancado`](./03-react-avancado) | Advanced patterns, Context API, typed hooks | `7 activities` |
-| [`04-node-intro`](./04-node-intro) | Node.js + TypeScript basics, REST API structure | `5 activities` |
-| [`05-node-avancado`](./05-node-avancado) | Express best practices, typed routes, middleware | `5 activities` |
+| Module                                                     | Description                                      | Activities     |
+| ---------------------------------------------------------- | ------------------------------------------------ | -------------- |
+| [`01-fundamentos-typescript`](./01-fundamentos-typescript) | TypeScript syntax, types, functions, and OOP     | `5 activities` |
+| [`02-react-intro`](./02-react-intro)                       | React + TypeScript: components, props, and types | `5 activities` |
+| [`03-react-avancado`](./03-react-avancado)                 | Advanced patterns, Context API, typed hooks      | `7 activities` |
+| [`04-node-intro`](./04-node-intro)                         | Node.js + TypeScript basics, REST API structure  | `5 activities` |
+| [`05-node-avancado`](./05-node-avancado)                   | Express best practices, typed routes, middleware | `5 activities` |
 
 ---
 
 ### 🧪 Requirements
 
-- ✅ Basic programming logic
-- ✅ Computational thinking
-- ✅ (Recommended) Previous knowledge in HTML, CSS, and JavaScript
+* ✅ Basic programming logic
+* ✅ Computational thinking
+* ✅ (Recommended) Previous knowledge in HTML, CSS, and JavaScript
 
 ---
 
 ### 🚀 Technologies
 
-- TypeScript
-- React
-- Node.js
-- Express
-- Git & GitHub
+* TypeScript
+* React
+* Node.js
+* Express
+* Git & GitHub
 
 ---
 
@@ -122,7 +145,7 @@ All certificates are available on the DIO platform upon module completion.
 
 ### 📌 Author
 
-Developed by [Daniel Duarte](https://github.com/danielduartt) 🚀  
+Developed by [Daniel Duarte](https://github.com/danielduartt) 🚀
 Training available at [dio.me](https://www.dio.me)
 
----
+```

@@ -40,3 +40,4 @@ coverage/
 
 # React Native
 .expo/
+nvim-linux-*.tar.gz
