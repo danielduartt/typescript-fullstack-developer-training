@@ -1,34 +1,8 @@
-abstract class Account {
-    name: string | undefined; 
-    accountNumber: number; 
-    balance: number = 0; 
+import { PeopleAccount } from "./class/PeopleAccount";
+import { CompanyAccount } from "./class/CompanyAccount";
 
-    constructor(name: string, accountNumber: number){
-        this.name = name; 
-        this.accountNumber = accountNumber;
-    }
+const peopleaccount: PeopleAccount = new PeopleAccount("Joãozinho", 1, 1);
+console.log(peopleaccount.getName());
 
-    deposit = () => {
-        console.log("Você depositou..."); 
-    }
-
-    withdraw = () => {
-        console.log("Você sacou..."); 
-    }
-
-    getBalance = () => {
-        console.log(this.balance); 
-    }
-}
-
-class PeopleAccount extends Account{
-    doc_id: number; 
-
-    constructor(name: string, accountNumber: number, doc_id: number){
-        super(name, accountNumber); 
-        this.doc_id = doc_id; 
-    }
-
-}
-
-
+const companyaccount: CompanyAccount = new CompanyAccount("David", 2); 
+console.log(companyaccount.getName()); 
