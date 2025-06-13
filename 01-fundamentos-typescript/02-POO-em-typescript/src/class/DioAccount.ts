@@ -1,7 +1,8 @@
 export abstract class DioAccount {
     private name: string; 
-    accountNumber: number; 
-    balance: number = 0; 
+    //readonly siginifica que o att pode ser apenas lido 
+    public readonly accountNumber: number; 
+    public balance: number = 0; 
     private status: boolean  = true; 
 
     constructor(name: string, accountNumber: number){
