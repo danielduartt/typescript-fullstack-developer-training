@@ -35,6 +35,10 @@ export abstract class DioAccount {
         this.name = name; 
     }
 
+    getStatus = (): boolean => {
+        return this.status; 
+    }
+
     // private pois acontece apenas de forma interna a classe e o obj instanciado
     private validadeStatus = (): boolean=> {
         if(this.status){
