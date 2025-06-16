@@ -6,6 +6,6 @@ class SpecialAccount extends DioAccount{
     }
     special_deposit = (value: number) : void => {
         console.log(`Você fez um depósito especial no valor de ${value + 10} (+ 10)`); 
-        this.balance += (value + 10); 
+        this.setBalance(this.getBalance() + value + 10); 
     }
 }
