@@ -10,6 +10,6 @@ export class PeopleAccount extends DioAccount {
 
   override deposit = (value: number ): void => {
     console.log("Você fez um depósito...");
-    super.deposit(value); // mantém a lógica de depósito da DioAccount
+    super.deposit(value); 
   };
 }

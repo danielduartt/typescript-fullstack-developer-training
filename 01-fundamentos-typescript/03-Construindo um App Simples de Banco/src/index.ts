@@ -4,9 +4,9 @@ import { SpecialAccount } from './class/SpecialAccount';
 
 // Pessoa física
 const peopleAccount = new PeopleAccount('Daniel', 12345, 11122233344);
-peopleAccount.deposit(0); // sobrescrito: apenas imprime
-peopleAccount.withdraw(50); // não funciona (saldo 0)
-peopleAccount.deposit = (value: number): void => { // sobrescrevendo para simular depósito válido
+peopleAccount.deposit(0); 
+peopleAccount.withdraw(50); 
+peopleAccount.deposit = (value: number): void => { 
   if (peopleAccount.getStatus()) {
     console.log(`Depósito de ${value} na conta de ${peopleAccount.getName()}`);
     peopleAccount.setBalance(peopleAccount.getBalance() + value);
@@ -20,7 +20,7 @@ console.log('----------------------------------');
 
 // Conta empresa
 const companyAccount = new CompanyAccount('Empresa X', 54321);
-companyAccount.deposit(0); // sobrescrito: apenas imprime
+companyAccount.deposit(0); 
 companyAccount.getLoan(1000);
 companyAccount.withdraw(200);
 console.log('Saldo Empresa:', companyAccount.getBalance());
