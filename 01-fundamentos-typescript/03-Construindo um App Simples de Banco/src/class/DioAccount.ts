@@ -1,5 +1,5 @@
 export abstract class DioAccount {
-    private name: string; 
+    private readonly name: string; 
     //readonly siginifica que o att pode ser apenas lido 
     private readonly accountNumber: number; 
     private  balance: number = 0; 
@@ -33,11 +33,6 @@ export abstract class DioAccount {
     getName = () : string  => {
         return this.name; 
     }
-
-    setName = (name: string) : void => {
-        this.name = name; 
-    }
-
     getStatus = (): boolean => {
         return this.status; 
     }
