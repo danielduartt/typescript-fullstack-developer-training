@@ -40,3 +40,24 @@ coverage/
 
 # React Native
 .expo/
+
+
+# Arquivo de lock, se quiser ignorar (opcional)
+package-lock.json
+yarn.lock
+
+# Arquivos temporários do sistema
+Thumbs.db
+*.log
+
+# Pasta de testes temporários ou mock
+__tests__/
+__mocks__/
+
+# Arquivos de cache do Jest (se usar)
+jest.config.js
+jest.cache/
+
+# Arquivos de produção Docker (se usar Docker futuramente)
+Dockerfile
+.dockerignore
