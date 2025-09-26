@@ -1,29 +1,35 @@
-import { Layout } from "../components/Layout"
-import styled from 'styled-components'
-import { ChakraProvider } from "@chakra-ui/react"
+import { Layout } from "./components/Layout"
+import { ChakraProvider, createSystem, defaultConfig} from "@chakra-ui/react"
+import styled from "styled-components"
 
-
+const system = createSystem(defaultConfig)
 const Box = styled.div`
   background-color: orange;
+  padding: 20px;
   border-radius: 25px;
-  padding-left: 15px;
-  `
+  max-width: 400px;
+  margin: 0 auto;
+`
+
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider value={system}>
       <Layout>
+    
         <Box>
-          <h1>Faça seu Login</h1>
+          <h1>Faça Login</h1>
         </Box>
-        <label htmlFor="email_input">Email</label>
-        <input id="email_input"  type="email"/>
 
-        <label htmlFor="password_input">Senha</label>
-        <input id="password_input" type="password" />
+        <label htmlFor="emailInput">Email</label>
+        <input id="emailInput" type="email" />
 
-        <button>
+        <label htmlFor="passwordInput">Senha</label>
+        <input id="passwordInput" type="password" />
+
+        <button type="submit">
           Entrar
         </button>
+
       </Layout>
     </ChakraProvider>
   );
