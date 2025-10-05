@@ -1,3 +1,33 @@
-.header{
-    background-color: orange;
+.app-header{
+    background: linear-gradient(90deg, #FF8A00 0%, #FF4E00 100%);
+    color: white;
+}
+
+.header-content{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}.header-title{
+    margin: 0;
+    font-weight: 700;
+}
+
+.header-nav{
+  display: flex;
+  gap: 12px;
+}.header-nav a{
+    color: rgba(255,255,255,0.95);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 600px){
+    .header-content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-nav{ display: flex; flex-wrap: wrap; gap: 8px; }
 }

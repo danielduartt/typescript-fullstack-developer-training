@@ -1,0 +1,16 @@
+.login-card {
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+  margin-bottom: 12px;
+}
+
+.login-card h1 {
+  margin: 0 0 20px 0;
+  color: #2d3748;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
